@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AR куб на Three.js</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+      #container {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+      #arButton {
+        /* display: none; */
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        background-color: #fff;
+        border: 2px solid #000;
+        color: #000;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container"></div>
+    <button id="arButton">Открыть в AR</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
